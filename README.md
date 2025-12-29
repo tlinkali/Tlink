@@ -1,73 +1,123 @@
-# Welcome to your Lovable project
+# Tlink Operateur
 
-## Project info
+Site vitrine professionnel pour **Tlink Opérateur**, présentant les solutions de télécommunications et services numériques destinés aux entreprises.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🧾 Présentation
 
-There are several ways of editing your application.
+**Tlink Operateur** est une plateforme web moderne conçue pour :
+- Présenter les offres et services de l’entreprise
+- Faciliter la prise de contact avec les clients
+- Offrir une expérience utilisateur claire, rapide et responsive
 
-**Use Lovable**
+Le projet a été développé avec une approche moderne orientée **performance**, **sécurité** et **évolutivité**.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Fonctionnalités principales
 
-**Use your preferred IDE**
+- Site vitrine professionnel
+- Pages services détaillées
+- Page contact avec formulaire
+- Design responsive (desktop / mobile)
+- Architecture prête pour l’ajout d’un backend (API)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Technologies utilisées
 
-Follow these steps:
+### Frontend
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Shadcn UI
+- React Router DOM
+- Lucide React
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Outils & Environnement
+- Git & GitHub
+- Orchids
+- Windows / PowerShell
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📁 Structure du projet
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```
+Tlink/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── styles/
+│   └── main.tsx
+├── .gitignore
+├── package.json
+├── vite.config.ts
+└── README.md
+```
+
+---
+
+## ⚙️ Installation locale
+
+### Prérequis
+- Node.js (>= 18)
+- npm ou yarn
+
+### Étapes
+
+```bash
+git clone https://github.com/tlinkali/Tlink.git
+cd Tlink
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Le projet sera accessible sur :
+👉 http://localhost:5173
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🔐 Sécurité
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Les fichiers sensibles (.env, clés API, etc.) sont exclus via .gitignore
+- Aucune donnée sensible n’est versionnée
+- Authentification GitHub via token sécurisé
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🌍 Déploiement
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Le projet est prêt pour un déploiement sur :
+- OVH
+- VPS Linux
+- Hébergement statique (build React)
 
-## How can I deploy this project?
+Le backend pourra être ajouté ultérieurement (FastAPI / Node.js).
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 📌 Améliorations futures
 
-Yes, you can!
+- Intégration backend (API REST)
+- Stockage des messages de contact
+- Tableau de bord administrateur
+- SEO avancé
+- CI/CD GitHub Actions
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 👤 Auteur
+
+Développé par **Mohamed Ali Jammaa**  
+GitHub : https://github.com/tlinkali
+
+---
+
+## 📄 Licence
+
+Projet privé – Tous droits réservés.
