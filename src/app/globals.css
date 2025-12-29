@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #4a4a4a;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #4a4a4a;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #4a4a4a;
+
+  --color-primary: #333333;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #f7f7f7;
+  --color-secondary-foreground: #333333;
+
+  --color-muted: #f7f7f7;
+  --color-muted-foreground: #666666;
+
+  --color-accent: #008cb4;
+  --color-accent-foreground: #ffffff;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+
+  --color-border: #eeeeee;
+  --color-input: #eeeeee;
+  --color-ring: #008cb4;
+
+  --color-off-white: #f7f7f7;
+  --color-heading-dark: #333333;
+  --color-text-dark: #4a4a4a;
+  --color-quote-blue: #008cb4;
+  --color-quote-author: #666666;
+
+  --font-sans: "Montserrat", sans-serif;
+  --font-display: "Montserrat", sans-serif;
+
+  --radius-lg: 0rem;
+  --radius-md: 0rem;
+  --radius-sm: 0rem;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #eeeeee;
+  }
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #4a4a4a;
+    --card: #ffffff;
+    --card-foreground: #4a4a4a;
+    --popover: #ffffff;
+    --popover-foreground: #4a4a4a;
+    --primary: #333333;
+    --primary-foreground: #ffffff;
+    --secondary: #f7f7f7;
+    --secondary-foreground: #333333;
+    --muted: #f7f7f7;
+    --muted-foreground: #666666;
+    --accent: #008cb4;
+    --accent-foreground: #ffffff;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #eeeeee;
+    --input: #eeeeee;
+    --ring: #008cb4;
+    --radius: 0rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--color-text-dark);
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-heading-dark);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+  }
+
+  h3, h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-heading-dark);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .quote-text {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-quote-blue);
+    text-align: center;
+    font-style: italic;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .quote-author {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-quote-author);
+    text-align: center;
+    text-transform: none;
+    margin-top: 1rem;
+  }
+
+  .value-section {
+    padding: 80px 0;
+  }
+
+  .value-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
+
+  .value-content {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+
+  .value-icon {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .value-icon img, .value-icon svg {
+    max-width: 180px;
+    height: auto;
+  }
+
+  .bg-zebra-white {
+    background-color: #ffffff;
+  }
+
+  .bg-zebra-off {
+    background-color: #f7f7f7;
+  }
+
+  .section-header-wrapper {
+    padding: 100px 0 60px;
+    border-bottom: 1px solid var(--color-border);
+  }
+}
